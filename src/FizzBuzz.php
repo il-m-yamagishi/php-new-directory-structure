@@ -12,6 +12,20 @@ final class FizzBuzz
 {
     public function getString(int $count): string
     {
-        return \sprintf('%s', $count);
+        $strList = [];
+
+        for ($i = 1; $i <= $count; $i++) {
+            if ($i % 15 === 0) {
+                $strList[] = 'FizzBuzz';
+            } elseif ($i % 3 === 0) {
+                $strList[] = 'Fizz';
+            } elseif ($i % 5 === 0) {
+                $strList[] = 'Buzz';
+            } else {
+                $strList[] = \strval($i);
+            }
+        }
+
+        return \implode(',', $strList);
     }
 }
