@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @license MIT
+ * @license Apache-2.0
  */
 
 declare(strict_types=1);
