@@ -8,3 +8,7 @@
 $ composer install
 $ composer pre-commit
 ```
+
+## Why?
+
+see [tweet](https://twitter.com/akai_inu/status/1669866150765953024).
