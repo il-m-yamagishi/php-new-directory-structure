@@ -27,5 +27,20 @@
         "psr-4": {
             "NewDirectoryStructure\\": "src/"
         }
+    },
+    "scripts": {
+        "psalm": "psalm",
+        "phpstan": "phpstan analyse --level=max src",
+        "lint": [
+            "@fix",
+            "@psalm",
+            "@phpstan"
+        ],
+        "test": "phpunit src",
+        "fix": "php-cs-fixer fix src",
+        "pre-commit": [
+            "@lint",
+            "@test"
+        ]
     }
 }

@@ -24,6 +24,10 @@ final class FizzBuzzTest extends TestCase
         self::assertSame($expected, $fizzBuzz->getString($input));
     }
 
+    /**
+     * @return array
+     * @phpstan-return list<array{0: int, 1: string}>
+     */
     public static function getStringDataProvider(): array
     {
         return [
